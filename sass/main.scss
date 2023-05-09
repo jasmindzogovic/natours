@@ -1,11 +1,6 @@
-/*
-COLORS:
-
-Light green: #7ed56f
-Medium green: #55c57a
-Dark green: #28b485
-
-*/
+$primary-color: #7ed56f;
+$primary-color-light: #55c57a;
+$primary-color-dark: #28b485;
 
 *, *::after, *::before {
     margin: 0;
@@ -29,7 +24,7 @@ body {
 
 .header {
     height: 95vh;
-    background-image: linear-gradient(to right bottom, #7ed56fc8, #28b485cb), url(../img/hero.jpg);
+    background-image: linear-gradient(to right bottom, rgba($primary-color-light, 0.8), rgba($primary-color-dark, 0.8)), url(../img/hero.jpg);
     background-size: cover;
     background-position: top;
     clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
@@ -43,7 +38,7 @@ body {
 }
 
 .header__logo { 
-    height: 2.1875rem;
+    height: 2.5rem;
 }
 
 .header__text-box {
@@ -63,7 +58,7 @@ body {
 
 .heading-primary--main {
     display: block;
-    font-size: 3.75rem;
+    font-size: 5rem;
     font-weight: 400;
     letter-spacing: 2.1875rem;
     animation: moveInLeft 1s ease-in;
@@ -71,7 +66,7 @@ body {
 
 .heading-primary--sub {
     display: block;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: 1.0875rem;
     animation: moveInRight 1s ease-in;
@@ -145,6 +140,7 @@ body {
 .btn--white {
     background-color: white;
     color: #777;
+    font-size: 1.3rem;
 }
 
 .btn::after {
