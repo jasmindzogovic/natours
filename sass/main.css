@@ -27,17 +27,14 @@ body {
           clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
   position: relative;
 }
-
 .header__logo-box {
   position: absolute;
   top: 2.5rem;
   left: 2.5rem;
 }
-
 .header__logo {
   height: 2.5rem;
 }
-
 .header__text-box {
   position: absolute;
   top: 40%;
@@ -47,12 +44,11 @@ body {
 }
 
 .heading-primary {
-  color: white;
+  color: #fff;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 2.25rem;
 }
-
 .heading-primary--main {
   display: block;
   font-size: 5rem;
@@ -60,7 +56,6 @@ body {
   letter-spacing: 2.1875rem;
   animation: moveInLeft 1s ease-in;
 }
-
 .heading-primary--sub {
   display: block;
   font-size: 1.5rem;
@@ -126,7 +121,7 @@ body {
 }
 
 .btn--white {
-  background-color: white;
+  background-color: #fff;
   color: #777;
   font-size: 1.3rem;
 }
@@ -145,7 +140,7 @@ body {
 }
 
 .btn--white::after {
-  background-color: white;
+  background-color: #fff;
 }
 
 .btn:hover::after {
