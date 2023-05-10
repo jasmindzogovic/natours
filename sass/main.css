@@ -61,7 +61,7 @@ body {
 }
 .heading-primary--main {
   display: block;
-  font-size: 5rem;
+  font-size: 6rem;
   font-weight: 400;
   letter-spacing: 2.1875rem;
   animation: moveInLeft 1s ease-in;
@@ -98,7 +98,7 @@ body {
 .btn--white {
   background-color: #fff;
   color: #777;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 .btn--white::after {
   background-color: #fff;
@@ -148,4 +148,5 @@ body {
   max-width: 71.25rem;
   background-color: #eee;
   margin: 0 auto;
+  font-size: 1.2rem;
 }/*# sourceMappingURL=main.css.map */
