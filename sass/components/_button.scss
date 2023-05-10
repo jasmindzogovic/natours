@@ -1,3 +1,5 @@
+@use "../abstract/variables" as *;
+
 .btn {
     &:link, &:visited {
         text-transform: uppercase;
@@ -11,7 +13,7 @@
     &:hover {
         transform: translateY(-0.1875rem);
         box-shadow: 0 .625rem 1.25rem rgba($color-black, 0.2);
-
+        
         &::after {
             transform: scaleX(1.4) scaleY(1.6);
             opacity: 0;

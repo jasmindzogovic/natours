@@ -1,17 +1,37 @@
-@use "./base/base" as *;
-@use "./base/animations" as *;
-@use "./base/typography" as *;
-@use "./base/utilities" as *;
-
 @use "./abstract/functions" as *;
 @use "./abstract/mixins" as *;
 @use "./abstract/variables" as *;
 
-@use "./pages/home" as *;
+@use "./base/animations" as *;
+@use "./base/base" as *;
+@use "./base/typography" as *;
+@use "./base/utilities" as *;
 
 @use "./components/button" as *;
 
+@use "./layout/layout" as *;
 @use "./layout/header" as *;
-
 @use "./layout/grid" as *;
 
+@use "./pages/home" as *;
+
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    /*font-size: 1rem;*/
+    line-height: 1.7;
+    color: $color-grey-dark;
+    padding: 1.875rem;
+    box-sizing: border-box;
+}
