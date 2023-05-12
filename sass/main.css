@@ -91,12 +91,31 @@ body {
   text-shadow: 0.5rem 1rem 1.25rem rgba(0, 0, 0, 0.2);
 }
 
+.heading-tertiary {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.paragraph:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
 .u-center-text {
   text-align: center;
 }
 
-.u-margin-bottom-8 {
+.u-margin-bottom-big {
   margin-bottom: 5rem;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 1.25rem;
 }
 
 .btn:link, .btn:visited {
@@ -179,8 +198,9 @@ body {
   display: flex;
   justify-content: center;
   font-size: 2rem;
+  padding: 0 15rem;
 }
 
-.col-1-of-2:not(:last-child) {
-  margin-right: 30rem;
+.col-1-of-2 {
+  width: 50%;
 }/*# sourceMappingURL=main.css.map */

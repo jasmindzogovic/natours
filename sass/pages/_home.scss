@@ -10,8 +10,9 @@
     display: flex;
     justify-content: center;
     font-size: 2rem;
+    padding: 0 15rem;
 }
 
-.col-1-of-2:not(:last-child) {
-    margin-right: 30rem;
+.col-1-of-2 {
+    width: 50%;
 }
