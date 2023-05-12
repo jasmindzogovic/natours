@@ -1,0 +1,46 @@
+@use "../abstract/variables" as *;
+
+.feature-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(#fff, 0.8);
+    border-radius: 3px;
+    padding: 2.5rem;
+    box-shadow: 0 1.5rem 4rem rgba( black, .15);
+    transition: all .3s;
+    margin: 8rem 0 8rem 0;
+
+    &:not(:last-child) {
+        margin-right: 2rem;
+    }
+
+    &__icon {
+        font-size: 6rem;
+        margin-bottom: .5rem;   
+        background-image: linear-gradient(to right, $primary-color, $primary-color-dark);
+        display: inline-block;
+        background-clip: text;
+        color: transparent; 
+    }
+
+    .heading-tertiary {
+        color: $color-grey-dark;
+        font-style: normal;
+    }
+
+    &__text {
+        font-size: 1.5rem;
+        color: $color-grey-dark;
+        font-style: normal;
+    }
+
+    &:hover {
+        transform: translateY(-10px) scale(1.03);
+    }
+}
+
+
+.col-1-of-4:not(:last-child) {
+    margin-right: 6rem;
+}
