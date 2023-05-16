@@ -11,8 +11,11 @@
 @use "./components/components" as *;
 @use "./components/feature-box" as *;
 @use "./components/cards" as *;
+@use "./components/story" as *;
 
 @use "./layout/layout" as *;
 @use "./layout/header" as *;
 
 @use "./pages/home" as *;
+
+
