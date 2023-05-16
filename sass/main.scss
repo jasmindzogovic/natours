@@ -13,9 +13,11 @@
 @use "./components/cards" as *;
 @use "./components/story" as *;
 @use "./components/bg-video" as *;
+@use "./components/form" as *;
 
 @use "./layout/layout" as *;
 @use "./layout/header" as *;
+@use "./layout/footer" as *;
 
 @use "./pages/home" as *;
 
