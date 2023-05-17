@@ -1,6 +1,6 @@
 @use "./abstract/functions" as *;
-@use "./abstract/mixins" as *;
 @use "./abstract/variables" as *;
+@use "./abstract/mixin" as *;
 
 @use "./base/animations" as *;
 @use "./base/base" as *;
