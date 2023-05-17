@@ -1,26 +1,25 @@
-@use "./abstract/functions" as *;
-@use "./abstract/variables" as *;
-@use "./abstract/mixin" as *;
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
 
-@use "./base/animations" as *;
-@use "./base/base" as *;
-@use "./base/typography" as *;
-@use "./base/utilities" as *;
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
 
-@use "./components/button" as *;
-@use "./components/components" as *;
-@use "./components/feature-box" as *;
-@use "./components/cards" as *;
-@use "./components/story" as *;
-@use "./components/bg-video" as *;
-@use "./components/form" as *;
-@use "./components/popup" as *;
+@import "components/bg-video";
+@import "components/button";
+@import "components/card";
+@import "components/composition";
+@import "components/feature-box";
+@import "components/form";
+@import "components/popup";
+@import "components/story";
 
-@use "./layout/layout" as *;
-@use "./layout/header" as *;
-@use "./layout/footer" as *;
-@use "./layout/navigation" as *;
+@import "layout/footer";
+@import "layout/grid";
+@import "layout/header";
+@import "layout/navigation";
 
-@use "./pages/home" as *;
-
+@import "pages/home";
 

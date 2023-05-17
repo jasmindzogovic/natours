@@ -1,91 +1,32 @@
-@use "../abstract/variables" as *;
-@use "../abstract/mixin" as *;
-
 .section-about {
     background-color: $color-grey-light-1;
     padding: 25rem 0;
-    margin-top: -25vh;
-
-    @include respond(tab-land) {
-        padding: 15rem 0;
-    }
-
-    .btn-text {
-        @include respond(tab-land) {
-            font-size: 1.2rem;
-        }
-    }
-
-    .heading-secondary {
-
-        @include respond(tab-port) {
-            font-size: 2rem;
-        }
-    }
-}
-
-    .row {
-    display: flex;
-    justify-content: center;
-    font-size: 2rem;
-    padding: 0 15rem;
+    margin-top: -20vh;
 
     @include respond(tab-port) {
-        flex-direction: column;
-        align-items: center;
+        padding: 20rem 0;
     }
-
-    @include respond(tab-land) {
-        padding: 0 5rem;
-    }
-}
-
-.col-1-of-2 {
-    width: 50%;
 }
 
 .section-features {
-    padding: 12.5rem 0;
-    background-image: linear-gradient(to right bottom, rgba($primary-color, 0.8), rgba($primary-color-dark, 0.8)), url(../../img/nat-4.jpg);
+    padding: 20rem 0;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.8),
+        rgba($color-primary-dark, 0.8)),
+    url(../img/nat-4.jpg);
     background-size: cover;
-    transform: skewY(-7deg); 
-    margin-top: -9rem;
+    transform: skewY(-7deg);
+    margin-top: -10rem;
+
     & > * {
         transform: skewY(7deg);
     }
 
     @include respond(tab-port) {
-        padding: 5rem 0;
-        margin-top: -3rem;
+        padding: 10rem 0;
     }
 
-    .row {
-
-        @include respond(tab-port) {
-            flex-direction: column;
-            align-items: center;
-            padding: 0;
-        }
-    }
-
-    .col-1-of-4 {
-
-        @include respond(tab-port) {
-            margin-right: 0;
-        }
-    }
-
-    .heading-tertiary {
-        @include respond(tab-land) {
-            font-size: 1.2rem;
-        }
-    }
-
-    .feature-box__text {
-        @include respond(tab-land) {
-            font-size: 1.2rem;
-        }
-    }
 }
 
 .section-tours {
@@ -93,80 +34,65 @@
     padding: 25rem 0 15rem 0;
     margin-top: -10rem;
 
-    .row {
-
-        @include respond(tab-port) {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-    }
-
-    .col-1-of-3:not(:last-child) {
-
-        @include respond(tab-port) {
-            margin-right: 0;
-            margin-bottom: 10rem;
-        }
-    }
-
-    .tours-btn-container {
-
-        @include respond(tab-port) {
-            padding-top: 0;
-        }
-    }
-
-    .card__heading-span {
-
-        @include respond(tab-port) {
-            font-size: 1.7rem;
-            padding: 0.2rem;
-        }
-    }
-
-    .card__details-item {
-
-        @include respond(tab-port) {
-            font-size: 1rem;
-        }
+    @include respond(tab-port) {
+        padding: 20rem 0 10rem 0;
     }
 }
 
 .section-stories {
-    padding: 15rem 0;
     position: relative;
-    overflow: hidden;
+    padding: 15rem 0;
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
 }
 
 .section-book {
-    padding: 15rem 15rem;
-    background-image: linear-gradient(to right bottom, $primary-color-light, $primary-color-dark);
+    padding: 15rem 0;
+    background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
 
-    .tours-btn-container {
-        display: block;
-        padding-top: 0;
-    }
-
-    .btn {
-        padding: 1rem 4rem;
+    @include respond(tab-port) {
+        padding: 10rem 0;
     }
 }
 
 .book {
-    background-image: linear-gradient(105deg, rgba(white, 0.9) 0%, rgba(white, 0.9) 50%, transparent 50%), url(../../img/nat-10.jpg);
-    background-size: cover;
+    background-image: linear-gradient(105deg, 
+                                    rgba($color-white, .9) 0%,
+                                    rgba($color-white, .9) 50%,
+                                    transparent 50%) ,
+                            url(../img/nat-10.jpg);
+    background-size: 100%;
     border-radius: 3px;
-    box-shadow: 0 1.5rem 4rem rgba(black, 0.2);
-    height: 55rem;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+
+    @include respond(tab-land) {
+        background-image: linear-gradient(105deg, 
+        rgba($color-white, .9) 0%,
+        rgba($color-white, .9) 65%,
+        transparent 65%) ,
+url(../img/nat-10.jpg);
+        background-size: cover;
+    }
+
+    @include respond(tab-port) {
+        background-image: linear-gradient(to right, 
+        rgba($color-white, .9) 0%,
+        rgba($color-white, .9) 100%),
+url(../img/nat-10.jpg);
+    }
 
     &__form {
         width: 50%;
         padding: 6rem;
-    }
 
-    .heading-secondary {
-        font-size: 3.5rem;
+        @include respond(tab-land) {
+            width: 65%;
+        }
+
+        @include respond(tab-port) {
+            width: 100%;
+        }
     }
 }
-
