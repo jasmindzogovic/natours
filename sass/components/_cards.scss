@@ -114,6 +114,10 @@
         width: 80%;
         margin: 0 auto;
         padding: 3rem;
+
+        @include respond(tab-port) {
+            padding: 1rem;
+        }
     }
 
     &__details-item {

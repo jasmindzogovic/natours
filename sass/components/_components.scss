@@ -16,12 +16,23 @@
             width: 50%;
         }
 
+        @include respond(tab-port) {
+            width: 45%;
+        }
+
         &-1 {
             top: -2rem;
             left: 0rem;
 
+            
+
             @include respond(tab-land) {
                 top: -1rem;
+                left: 0;
+            }
+
+            @include respond(tab-port) {
+                top: 5rem;
                 left: 0;
             }
         }
@@ -34,6 +45,11 @@
                 top: 2rem;
                 right: 4rem;
             }
+
+            @include respond(tab-port) {
+                top: 6rem;
+                left: 25rem;
+            }
         }
 
         &-3 {
@@ -43,6 +59,11 @@
             @include respond(tab-land) {
                 top: 7rem;
                 left: 7rem;
+            }
+
+            @include respond(tab-port) {
+                top: 4rem;
+                left: 12rem;
             }
         }
 

@@ -83,7 +83,11 @@ body {
 .paragraph {
     font-size: 1.5rem;
     font-weight: 500;
-    
+
+    @include respond(tab-port) {
+        font-size: .6rem;
+    }
+
     @include respond(tab-land) {
         font-size: 1.2rem;
     }
